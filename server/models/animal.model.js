@@ -3,9 +3,16 @@ const mongoose = require("mongoose");
 
 // we make our model 
 const AnimalSchema = new mongoose.Schema({
-    name: String,
-    fact: String
-});
+    name: {
+        type: String,
+        required: [true, "Animal name is required"],
+        minLength: [2, "Animal name must be at lease two characters"]
+    },
+    fact: {
+        type: String,
+        required: [true, "Animal must have a fact"]
+    } 
+}, {timestamps: true});
 
 // finalize setting up the model 
 const Animal = mongoose.model("Animal", AnimalSchema);

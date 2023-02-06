@@ -8,5 +8,5 @@ mongoose.connect("mongodb://localhost/mongo_demo_db", {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 })
-    .then(() => console.log("** found the mongoose **"))
+    .then(() => console.log("** the mongoose has been found **"))
     .catch(err=> console.log("mongoose error connecting to database > ", err))

@@ -19,7 +19,7 @@ app.listen(port, () => console.log(`** running on port ${port} **`));
 /**
  * server - This is your backend server / project folder and will hold all server related files
     config - will handle the database configuration and connection
-    controllers - will hold all logic for each model (i.e creating, updating, etc...)
+    controllers - will hold all logic for each model (CRUD, etc...)
     models - will hold all the schemas
     routes - will handle all of our routes for each model
     server.js - will handle all the server logic with express
